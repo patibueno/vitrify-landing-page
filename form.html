@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="icon" type="image/png" href="img/logoMark.svg" />
+
+    <script src="form-handler.js"></script>
+    <title>Marcar Demo | Vitrify</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="logo vitrify" height="34" />
+        </a>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-text">
+          <h1 class="form-title">Entre em contato</h1>
+          <p>
+            Quero ser contatado pelo time da Vitrify e conhecer mais sobre os
+            produtos.
+          </p>
+
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/company/vitrify"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="social-icon"
+            >
+              <img src="img/in.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://wa.me/5511953043712"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="social-icon"
+            >
+              <img src="img/whatsapp.svg" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contact-form" action="#" method="post">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" />
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <p
+          id="form-message"
+          style="display: none; color: green; margin-top: 1rem"
+        >
+          Obrigado! Seu contato foi recebido.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
