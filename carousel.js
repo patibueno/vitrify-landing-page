@@ -1,36 +1,36 @@
 const slides = [
   {
-    img: "/img/dani.avif",
+    img: "/img/Daniel.png",
     name: "Daniel Magalhães",
     role: "Founder and Head of Strategy and Sales",
   },
   {
-    img: "/img/edson.avif",
+    img: "/img/Edson.png",
     name: "Edson Lopes",
     role: "Co-founder and CEO",
   },
   {
-    img: "/img/gabi.avif",
+    img: "/img/Gabriela.png",
     name: "Gabriela Pini",
     role: "Head of Products",
   },
   {
-    img: "/img/panta.avif",
+    img: "/img/Pantalena.png",
     name: "Alexandre Pantalena",
     role: "Head of Technology",
   },
   {
-    img: "/img/josemar.avif",
+    img: "/img/Josemar.png",
     name: "Josemar Flausino",
     role: "Software developer",
   },
   {
-    img: "/img/gui.avif",
+    img: "/img/Guilherme.png",
     name: "Guilherme Tavares",
     role: "Data engineer",
   },
   {
-    img: "/img/pati.avif",
+    img: "/img/Patricia.png",
     name: "Patricia Bueno",
     role: "Software developer",
   },
