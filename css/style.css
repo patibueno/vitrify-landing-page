@@ -832,6 +832,7 @@
     display: grid;
     grid-template-columns: repeat(4, max-content);
     grid-template-rows: 1fr;
+    justify-content: space-between;
   }
 
   .logo-col {
