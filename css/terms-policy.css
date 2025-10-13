@@ -1,0 +1,51 @@
+.container-terms-policy {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px 24px;
+}
+
+.title-terms-policy {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.main-section-terms-policy {
+  text-align: justify;
+}
+
+.terms-policy-text {
+  margin-bottom: 1rem;
+}
+
+.terms-policy-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-policy-list li {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title-terms-policy {
+    font-size: 48px;
+    margin-bottom: 0px;
+    line-height: normal;
+  }
+
+  .container-terms-policy {
+    padding: 80px 60px;
+    grid-template-columns: minmax(0, max-content) 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .width-limit-policy {
+    max-width: 293px;
+  }
+
+  .width-limit-terms {
+    max-width: 353px;
+  }
+}
