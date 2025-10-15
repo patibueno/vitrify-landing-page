@@ -17,148 +17,153 @@
     <script src="form-handler.js"></script>
     <title>Marcar Demo | Vitrify</title>
   </head>
-  <body>
-    <section class="header">
-      <a href="/vitrify-landing-page/index.html" class="logo-container">
-        <img src="img/logo.svg" alt="logo vitrify" class="logo" />
-        <img src="img/logoMark.svg" alt="logo vitrify" class="default-logo" />
-      </a>
-      <div class="header-buttons">
-        <a
-          class="login"
-          href="https://app.vitrify.tech"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Log in</a
-        >
-      </div>
-    </section>
-
-    <div class="container">
-      <section class="contact-section">
-        <div class="contact-text">
-          <h1 class="form-title">Entre em contato</h1>
-          <p>
-            Quero ser contatado pelo time da Vitrify e conhecer mais sobre os
-            produtos.
-          </p>
-
-          <div class="social-icons-form">
-            <a
-              href="https://www.linkedin.com/company/vitrify"
-              target="_blank"
-              aria-label="LinkedIn"
-              class="social-icon"
-            >
-              <img src="img/in.svg" alt="LinkedIn" />
-            </a>
-            <a
-              href="https://wa.me/5511953043712"
-              target="_blank"
-              aria-label="WhatsApp"
-              class="social-icon"
-            >
-              <img src="img/whatsapp.svg" alt="WhatsApp" />
-            </a>
-          </div>
+    <body>
+    <div class="root">
+      <section class="header">
+        <a href="/index.html" class="logo-container">
+          <img src="img/logo.svg" alt="logo vitrify" class="logo" />
+          <img src="img/logoMark.svg" alt="logo vitrify" class="default-logo" />
+        </a>
+        <div class="header-buttons">
+          <a
+            class="login"
+            href="https://app.vitrify.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Log in</a
+          >
         </div>
-
-        <div class="contact-form">
-          <form id="contact-form" action="#" method="post">
-            <div>
-              <label for="nome">Nome *</label>
-              <input type="text" id="nome" name="nome" required />
-            </div>
-            <div>
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" />
-            </div>
-
-            <label for="email">Email *</label>
-            <input
-              class="email-form"
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-
-        <p
-          id="form-message"
-          style="display: none; color: green; margin-top: 1rem"
-        >
-          Obrigado! Seu contato foi recebido.
-        </p>
       </section>
-    </div>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-col-logo logo-col">
-          <img
-            src="img/vitri-logo.png"
-            alt="Vitrify Logo"
-            class="footer-logo-1"
-          />
-          <img
-            src="img/footer-logo-2.png"
-            alt="Vitrify Logo"
-            class="footer-logo-2"
-          />
-        </div>
-
-        <div class="footer-col contact-col">
-          <p class="contact-text">Entre em contato para mais informações.</p>
-          <div class="footer-button">
-            <a href="form.html" class="outline-button button-cta footer">
-              Entrar em contato
-              <img src="img/arrow-right-black.svg" alt="Seta para a direita" />
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-col-info info-col">
-          <p class="email">contato@vitrify.tech</p>
-          <p class="phone">11 95304–3712</p>
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/company/vitrify"
-              target="_blank"
-              aria-label="LinkedIn"
-              class="social-icon"
-            >
-              <img src="img/in.svg" alt="LinkedIn" />
-            </a>
-            <a
-              href="https://wa.me/5511953043712"
-              target="_blank"
-              aria-label="WhatsApp"
-              class="social-icon"
-            >
-              <img src="img/whatsapp.svg" alt="WhatsApp" />
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-col-legal legal-col">
-          <div class="legal-links">
-            <a class="legal-link" href="privacy.html"
-              >Política de privacidade</a
-            >
-            <a class="legal-link" href="terms.html">Termos de uso</a>
-          </div>
-          <div>
-            <p class="copyright">
-              Copyright © <span id="year"></span> Vitrify.
+      <div class="container">
+        <section class="contact-section">
+          <div class="contact-text">
+            <h1 class="form-title">Entre em contato</h1>
+            <p>
+              Quero ser contatado pelo time da Vitrify e conhecer mais sobre os
+              produtos.
             </p>
-            <p class="rights">Todos os direitos reservados.</p>
+
+            <div class="social-icons-form">
+              <a
+                href="https://www.linkedin.com/company/vitrify"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="social-icon"
+              >
+                <img src="img/in.svg" alt="LinkedIn" />
+              </a>
+              <a
+                href="https://wa.me/5511953043712"
+                target="_blank"
+                aria-label="WhatsApp"
+                class="social-icon"
+              >
+                <img src="img/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contact-form" action="#" method="post">
+              <div>
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+              <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" />
+              </div>
+
+              <label for="email">Email *</label>
+              <input
+                class="email-form"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+
+          <p
+            id="form-message"
+            style="display: none; color: green; margin-top: 1rem"
+          >
+            Obrigado! Seu contato foi recebido.
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-col-logo logo-col">
+            <img
+              src="img/vitri-logo.png"
+              alt="Vitrify Logo"
+              class="footer-logo-1"
+            />
+            <img
+              src="img/footer-logo-2.png"
+              alt="Vitrify Logo"
+              class="footer-logo-2"
+            />
+          </div>
+
+          <div class="footer-col contact-col">
+            <p class="contact-text">Entre em contato para mais informações.</p>
+            <div class="footer-button">
+              <a href="form.html" class="outline-button button-cta footer">
+                Entrar em contato
+                <img
+                  src="img/arrow-right-black.svg"
+                  alt="Seta para a direita"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col-info info-col">
+            <p class="email">contato@vitrify.tech</p>
+            <p class="phone">11 95304–3712</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/company/vitrify"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="social-icon"
+              >
+                <img src="img/in.svg" alt="LinkedIn" />
+              </a>
+              <a
+                href="https://wa.me/5511953043712"
+                target="_blank"
+                aria-label="WhatsApp"
+                class="social-icon"
+              >
+                <img src="img/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col-legal legal-col">
+            <div class="legal-links">
+              <a class="legal-link" href="privacy.html"
+                >Política de privacidade</a
+              >
+              <a class="legal-link" href="terms.html">Termos de uso</a>
+            </div>
+            <div>
+              <p class="copyright">
+                Copyright © <span id="year"></span> Vitrify.
+              </p>
+              <p class="rights">Todos os direitos reservados.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
