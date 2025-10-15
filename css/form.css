@@ -6,9 +6,16 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .container {
   padding: 40px 24px;
   background: #fff;
+  flex: 1;
 }
 
 .contact-section {
@@ -107,7 +114,7 @@
   }
 
   .contact-section {
-    grid-template-columns: 310px 1fr;
+    grid-template-columns: minmax(0, 310px) 1fr;
     gap: 114px;
     align-items: center;
   }
@@ -124,7 +131,6 @@
   }
 
   .contact-text {
-    max-width: 310px;
     gap: 24px;
     line-height: normal;
   }
@@ -137,5 +143,30 @@
   .social-icons-form {
     min-height: 44px;
     align-items: center;
+  }
+}
+
+/* 1280px */
+
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+  }
+  .contact-section {
+    grid-template-columns: minmax(0, 600px) 1fr;
+    gap: 114px;
+    align-items: center;
+  }
+
+  .contact-text {
+    gap: 24px;
+    line-height: normal;
+  }
+
+  .contact-form {
   }
 }
