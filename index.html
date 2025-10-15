@@ -16,7 +16,7 @@
     <script src="carousel.js"></script>
     <script src="copywrite.js"></script>
   </head>
-  <body>
+   <body>
     <section class="header">
       <a href="/index.html" class="logo-container">
         <img src="img/logo.svg" alt="logo vitrify" class="logo" />
@@ -43,13 +43,18 @@
 
     <div class="hero">
       <h1 class="hero-title">
-        Informação confiável sobre crédito privado, em tempo real.
+        Informação confiável sobre mercado de capitais, em tempo real.
       </h1>
-      <p class="hero-subtitle">
-        Na Vitrify, aplicamos <strong>inteligência artificial</strong> para
-        transformar dados brutos em insights acionáveis. Acompanhe seus ativos
-        de Renda Fixa com alertas inteligentes e informações em tempo real.
-      </p>
+      <div class="hero-subtitle">
+        <p>
+          Na Vitrify, aplicamos <strong>inteligência artificial</strong> para
+          transformar dados brutos em insights acionáveis.
+        </p>
+        <p>
+          Acompanhe seus ativos de Renda Fixa com alertas inteligentes e
+          informações em tempo real.
+        </p>
+      </div>
     </div>
 
     <div class="hero-buttons">
@@ -85,8 +90,9 @@
       </p>
       <p class="text-content-subtitle">
         As ferramentas da Vitrify combinam escalabilidade e qualidade para
-        gerenciar seus ativos de Renda Fixa. Com inteligência artificial, você
-        recebe dados em tempo real para tomar decisões rápidas e embasadas.
+        gerenciar seus ativos de CRI/CRA/CR/Debêntures. Criadas com foco na
+        experiência do usuário, nossas ferramentas tornam o acompanhamento do
+        mercado simples e eficiente.
       </p>
 
       <div class="cards-grid">
@@ -234,6 +240,10 @@
 
     <div class="carousel-container">
       <div class="carousel-left">
+        <div class="nav-arrows">
+          <button id="prev-btn" onclick="prevSlide()">‹</button>
+          <button id="next-btn" onclick="nextSlide()">›</button>
+        </div>
         <img
           id="carousel-img"
           src="https://via.placeholder.com/350x350.png?text=Pessoa+1"
@@ -297,8 +307,11 @@
         </div>
 
         <div class="footer-col-info info-col">
-          <p class="email">contato@vitrify.tech</p>
-          <p class="phone">11 95304–3712</p>
+          <div>
+            <p class="email">contato@vitrify.tech</p>
+            <p class="phone">11 95304–3712</p>
+          </div>
+
           <div class="social-icons">
             <a
               href="https://www.linkedin.com/company/vitrify"
