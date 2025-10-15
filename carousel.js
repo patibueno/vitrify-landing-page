@@ -72,4 +72,7 @@ function resetAutoSlide() {
 window.addEventListener("DOMContentLoaded", () => {
   updateSlide(current);
   startAutoSlide();
+
+    document.getElementById("prev-btn").addEventListener("click", prevSlide);
+  document.getElementById("next-btn").addEventListener("click", nextSlide);
 });
