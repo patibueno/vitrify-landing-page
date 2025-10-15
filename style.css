@@ -375,6 +375,7 @@
   left: -20px;
   right: -20px;
   top: 50%;
+  min-width:220px;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
