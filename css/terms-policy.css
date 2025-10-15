@@ -49,3 +49,9 @@
     max-width: 353px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .container-terms-policy {
+    padding: 80px;
+  }
+}
