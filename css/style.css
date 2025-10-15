@@ -360,12 +360,33 @@
 .carousel-left {
   text-align: center;
   flex: 1;
+  position: relative;
 }
 
 .carousel-left img {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
+}
+
+.nav-arrows {
+  position: absolute;
+  background-color: transparent;
+  left: -20px;
+  right: -20px;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-arrows button {
+  background: none;
+  border: none;
+  font-size: 60px;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .carousel-name {
@@ -607,6 +628,12 @@
     width: 114px;
   }
 
+  .arrow.arrow-header {
+    display: inline;
+    height: 16px;
+    width: 16px;
+  }
+
   .login {
     display: inline-block;
     text-decoration: none;
@@ -721,7 +748,6 @@
 
   .carousel-left {
     margin-bottom: 64px;
-
     align-self: flex-end;
   }
 
@@ -808,11 +834,11 @@
     width: 114px;
   }
 
-  .arrow {
+  .arrow.arrow-header {
+    display: inline;
     height: 16px;
     width: 16px;
   }
-
   .hero {
     padding: 100px 112px 0 112px;
   }
@@ -895,7 +921,7 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 30px 64px;
+    padding: 23px 34px;
   }
   .default-logo {
     display: none;
@@ -907,29 +933,29 @@
     width: 114px;
   }
 
-  .login,
-  .outline-button.header-button {
-    font-size: 18px;
-  }
-
-  .arrow {
+  .arrow.arrow-header {
+    display: inline;
     height: 16px;
     width: 16px;
   }
 
   .hero {
-    padding: 112px 148px 0 148px;
+    padding: 116px 210px 0 210px;
   }
 
   .hero-title {
-    font-size: 68px;
+    width: 860px;
+    margin: 0 auto;
+    font-size: 48px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     font-weight: 700;
   }
 
   .hero-subtitle {
-    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
   }
 
   .hero-buttons-foreground {
@@ -938,45 +964,56 @@
 
   .hero-demo-button.demo,
   .outline-button.demo {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .text-content {
-    padding: 112px 148px;
+    padding: 80px;
   }
 
   .text-content-title {
-    font-size: 68px;
-    margin-bottom: 60px;
+    width: 880px;
+    margin: 0 auto;
+    font-size: 48px;
+    margin-bottom: 32px;
   }
 
   .text-content-subtitle {
-    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
     margin-bottom: 68px;
   }
 
+  .cards-grid {
+    width: 880px;
+    margin: 0 auto;
+  }
   .text-container-alert {
-    gap: 148px;
-    padding: 112px 148px 0 148px;
+    gap: 60px;
+    padding: 80px 80px 0 80px;
+    justify-content: flex-end;
   }
 
   .text-content-title-alerts {
-    font-size: 60px;
-    margin-bottom: 48px;
+    width: 425px;
+    font-size: 64px;
+    margin-bottom: 32px;
   }
 
   .text-content-subtitle-alerts {
-    font-size: 20px;
-    margin-bottom: 48px;
+    width: 680px;
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 
   .alerts-img-container {
-    margin: 0 32px 0 32px;
+    margin: 0 64px 0 64px;
   }
 
   .mobile-alerts-tablet {
     display: block;
-    width: 350px;
+    width: 252px;
   }
 
   .hero-demo-button.alert-button {
@@ -984,43 +1021,56 @@
   }
 
   .text-content-cta {
-    padding: 112px 148px;
+    padding: 80px;
   }
 
   .text-content-cta-title {
-    font-size: 68px;
+    width: 1120px;
+    font-size: 48px;
   }
 
   .text-content-cta-subtitle {
-    font-size: 20px;
-    margin-bottom: 48px;
+    font-size: 16px;
+    margin-bottom: 32px;
   }
 
   .cta-button-arrow {
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
   }
 
   .outline-button.button-cta {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .carousel-container {
-    padding: 112px 148px;
-    gap: 112px;
+    padding: 80px;
+    gap: 60px;
   }
 
   .carousel-title {
-    font-size: 52px;
-    margin-bottom: 48px;
+    font-size: 32px;
+    margin-bottom: 32px;
   }
 
   .carousel-button {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 
   .carousel-left {
     flex-basis: 0;
+    width: 316px;
+    flex: initial;
+  }
+
+  .carousel-left img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+  }
+
+  .carousel-text {
+    width: 746px;
   }
 
   .footer-content {
@@ -1028,6 +1078,7 @@
     grid-template-columns: repeat(4, max-content);
     grid-template-rows: 1fr;
     justify-content: space-between;
+    padding: 80px 100px;
   }
 
   .logo-col {
@@ -1040,11 +1091,17 @@
     grid-row: 1;
     align-items: flex-start;
     text-align: left;
+    justify-content: space-between;
   }
 
   .info-col {
     grid-column: 3;
     grid-row: 1;
+    justify-content: space-between;
+  }
+
+  .phone {
+    margin-bottom: 0px;
   }
 
   .legal-col {
@@ -1052,11 +1109,13 @@
     grid-row: 1;
     align-items: flex-start;
     text-align: left;
+    justify-content: space-between;
   }
 
   .social-icons {
     grid-column: auto;
     grid-row: auto;
+    margin-bottom: 0;
   }
 
   .legal-links {
