@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/terms-policy.css" />
     <link rel="icon" type="image/png" href="img/logoMark.svg" />
@@ -10,7 +17,7 @@
   </head>
   <body>
     <section class="header">
-      <a href="/vitrify-landing-page/index.html" class="logo-container">
+      <a href="/index.html" class="logo-container">
         <img src="img/logo.svg" alt="logo vitrify" class="logo" />
         <img src="img/logoMark.svg" alt="logo vitrify" class="default-logo" />
       </a>
@@ -22,12 +29,21 @@
           rel="noopener noreferrer"
           >Log in</a
         >
+        <div class="divider"></div>
+        <a href="form.html" class="outline-button header-button"
+          >Marcar demo<img
+            src="img/arrow.png"
+            class="arrow arrow-header"
+            alt="Seta para a direita"
+          />
+        </a>
       </div>
     </section>
+
     <div class="container-terms-policy">
       <section>
         <h2 class="title-terms-policy width-limit-policy">
-          Política de Privacidade.
+          Políticas de Privacidade.
         </h2>
       </section>
       <section class="main-section-terms-policy">
@@ -167,32 +183,40 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <div class="footer-col-logo logo-col">
-          <img
-            src="img/vitri-logo.png"
-            alt="Vitrify Logo"
-            class="footer-logo-1"
-          />
-          <img
-            src="img/footer-logo-2.png"
-            alt="Vitrify Logo"
-            class="footer-logo-2"
-          />
-        </div>
-
-        <div class="footer-col contact-col">
-          <p class="contact-text">Entre em contato para mais informações.</p>
-          <div class="footer-button">
-            <a href="form.html" class="outline-button button-cta footer">
-              Entrar em contato
-              <img src="img/arrow-right-black.svg" alt="Seta para a direita" />
-            </a>
+        <div class="footer-first-column">
+          <div class="footer-col-logo logo-col">
+            <img
+              src="img/vitri-logo.png"
+              alt="Vitrify Logo"
+              class="footer-logo-1"
+            />
+            <img
+              src="img/footer-logo-2.png"
+              alt="Vitrify Logo"
+              class="footer-logo-2"
+            />
+          </div>
+          <div class="footer-col contact-col">
+            <p class="contact-text">Entre em contato para mais informações.</p>
+            <div class="footer-button">
+              <a href="form.html" class="outline-button button-cta footer">
+                Entrar em contato
+                <img
+                  class="arrow"
+                  src="img/arrow.png"
+                  alt="Seta para a direita"
+                />
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="footer-col-info info-col">
-          <p class="email">contato@vitrify.tech</p>
-          <p class="phone">11 95304–3712</p>
+          <div>
+            <p class="email">contato@vitrify.tech</p>
+            <p class="phone">11 95304–3712</p>
+          </div>
+
           <div class="social-icons">
             <a
               href="https://www.linkedin.com/company/vitrify"
