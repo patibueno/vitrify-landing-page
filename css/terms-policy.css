@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
 .container-terms-policy {
   display: grid;
   grid-template-columns: 1fr;
@@ -53,5 +61,14 @@
 @media screen and (min-width: 1280px) {
   .container-terms-policy {
     padding: 80px;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 64px;
+  }
+
+  .width-limit-policy,
+  .width-limit-terms {
+    width: 440px;
+    max-width: none;
   }
 }
