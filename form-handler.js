@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       form.reset();
 
       setTimeout(() => {
-        window.location.href = "/index.html";
+        window.location.href = "/vitrify-landing-page/index.html";
       }, 2000);
     });
   }
