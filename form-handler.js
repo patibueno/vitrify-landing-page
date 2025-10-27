@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       form.reset();
 
       setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "index.html";
       }, 2000);
     });
   }
