@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const message = document.getElementById("form-message");
 
-  console.log({ form });
 
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -13,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       form.reset();
+
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 2000);
     });
   }
 });
