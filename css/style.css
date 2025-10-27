@@ -76,7 +76,7 @@
   margin-bottom: -20px;
   display: block;
   margin-left: auto;
-  background: transparent;
+  background: transparent !important;
 }
 
 .hero-photo-768,
