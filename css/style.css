@@ -606,6 +606,9 @@
 .phone {
   font-size: 14px;
   line-height: 160%;
+  text-decoration: none;
+  color: #000000;
+  display: block;
 }
 
 .footer-logo {
