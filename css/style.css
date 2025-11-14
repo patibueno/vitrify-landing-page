@@ -6,6 +6,18 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
 .header {
   display: flex;
   gap: 1rem;
@@ -71,10 +83,9 @@
 
 .hero-photo {
   display: block;
-  min-width: 337.634px;
+  width: 337.634px;
   height: 308.562px;
   margin-bottom: -20px;
-  display: block;
   margin-left: auto;
   background: transparent !important;
 }
@@ -279,6 +290,7 @@
   margin-right: -24px;
   padding: 16px 24px;
   max-width: 544px;
+  align-items: flex-start;
 }
 
 .large-break {
@@ -304,9 +316,8 @@
 .card-image {
   display: flex;
   flex: 1;
-  width: 71px;
-  height: 71px;
-  border-radius: 16px;
+  width: 40px;
+  height: 40px;
 }
 
 .card-image-container {
@@ -395,6 +406,85 @@
   font-weight: 400;
   align-items: center;
   line-height: 160%;
+}
+
+.text-content-cta-clients {
+  margin-top: 96px;
+  margin-bottom: 24px;
+  background-color: #000;
+  font-size: 16px;
+}
+
+.logos-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  mask: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+
+.logos-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  background-color: #000000;
+}
+
+.logos-track:hover {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  padding: 15px;
+}
+
+.logo-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(0, 0, 0, 0.9); /* Darker black on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.logo-svg {
+  width: 120px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-item {
+  background-color: #000;
+}
+
+.logo-item > img {
+  background-color: #000;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180px * 11));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logos-track {
+    animation: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.text-content-cta-clients > strong {
+  background-color: #000;
 }
 
 .arrow {
@@ -602,6 +692,7 @@
   font-size: 14px;
   line-height: 160%;
 }
+
 .email,
 .phone {
   font-size: 14px;
@@ -759,7 +850,7 @@
 
   .text-content-subtitle {
     margin-bottom: 40px;
-    width: 540.51px;
+    width: 600px;
     margin: 0 auto;
     margin-bottom: 68px;
   }
@@ -1149,15 +1240,16 @@
   }
 
   .text-content-subtitle {
-    width: 540.51px;
+    width: 600px;
     margin: 0 auto;
     font-size: 16px;
     margin-bottom: 68px;
   }
 
   .cards-grid {
-    width: 880px;
+    width: 1120px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
     gap: 24px;
     padding: 0;
     margin: 0 auto;
@@ -1231,6 +1323,17 @@
   .text-content-cta-title {
     width: 1120px;
     font-size: 48px;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .text-content-cta-subtitle {
