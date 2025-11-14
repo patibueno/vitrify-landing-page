@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" href="img/logoMark.svg" />
     <script src="carousel.js"></script>
     <script src="copywrite.js"></script>
+    <script src="logos-looping.js"></script>
   </head>
   <body>
     <section class="header">
@@ -69,6 +70,37 @@
       <img src="img/hero-photo_1280.png" alt="hero" class="hero-photo-1280" />
     </div>
 
+    <div class="text-content-cta-container">
+      <div class="text-content-cta">
+        <p class="text-content-cta-title fade-up">
+          Acompanhe seu portfólio de Renda Fixa em <br class="large-break" />
+          uma única plataforma.
+        </p>
+        <p class="text-content-cta-subtitle fade-up">
+          Monitore fluxos, eventos e posições da sua carteira com automação e
+          precisão em um único lugar.
+        </p>
+        <div class="text-content-cta-button">
+          <a href="form.html" class="outline-button button-cta"
+            >Entrar em contato
+            <img
+              class="cta-button-arrow"
+              src="img/arrow.png"
+              alt="Seta para a direita"
+          /></a>
+        </div>
+
+        <p class="text-content-cta-clients">
+          Escolhido por quem não abre mão de <strong>precisão </strong>e
+          <strong>agilidade:</strong>
+        </p>
+
+        <div class="logos-container">
+          <div class="logos-track" id="logosTrack"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="text-cards-container">
       <div class="text-content">
         <p class="text-content-title">
@@ -83,12 +115,10 @@
 
         <div class="cards-grid">
           <div class="alert-card">
-            <img src="img/alert-icon.png" alt="Alerta" class="card-image" />
+            <img src="img/alert-icon-1.svg" alt="Alerta" class="card-image" />
 
             <div class="card-text-container">
-              <h2 class="card-title">
-                Receba alertas 24/7 com resumo facilitado
-              </h2>
+              <h2 class="card-title">Receba alertas 24/7 com resumo</h2>
               <p class="card-text">
                 Seja o primeiro a saber sobre eventos que afetam sua carteira.
               </p>
@@ -103,7 +133,7 @@
           </div>
 
           <div class="alert-card">
-            <img src="img/data-icon.png" alt="Data" class="card-image" />
+            <img src="img/alert-icon-2.svg" alt="Data" class="card-image" />
 
             <div class="card-text-container">
               <h2 class="card-title">Encontre os dados centralizados</h2>
@@ -122,10 +152,66 @@
           </div>
 
           <div class="alert-card">
-            <img src="img/search-icon.png" alt="Search" class="card-image" />
+            <img src="img/alert-icon-3.svg" alt="Search" class="card-image" />
 
             <div class="card-text-container">
-              <h2 class="card-title">Busque por qualquer ativo do mercado</h2>
+              <h2 class="card-title">Busque por qualquer ativo</h2>
+              <p class="card-text">
+                Acesse informações sobre qualquer emissão do mercado em
+                segundos.
+              </p>
+              <a href="form.html" class="card-link"
+                >Começar agora
+                <img
+                  class="arrow"
+                  src="img/arrow.png"
+                  alt="Seta para a direita"
+              /></a>
+            </div>
+          </div>
+
+          <div class="alert-card">
+            <img src="img/alert-icon-1.svg" alt="Alerta" class="card-image" />
+
+            <div class="card-text-container">
+              <h2 class="card-title">Receba alertas 24/7 com resumo</h2>
+              <p class="card-text">
+                Seja o primeiro a saber sobre eventos que afetam sua carteira.
+              </p>
+              <a href="form.html" class="card-link"
+                >Começar agora<img
+                  class="arrow"
+                  src="img/arrow.png"
+                  alt="Seta para a direita"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="alert-card">
+            <img src="img/alert-icon-2.svg" alt="Data" class="card-image" />
+
+            <div class="card-text-container">
+              <h2 class="card-title">Encontre os dados centralizados</h2>
+              <p class="card-text">
+                Tenha todos os dados de emissão, garantias e eventos em um só
+                lugar.
+              </p>
+              <a href="form.html" class="card-link"
+                >Começar agora
+                <img
+                  class="arrow"
+                  src="img/arrow.png"
+                  alt="Seta para a direita"
+              /></a>
+            </div>
+          </div>
+
+          <div class="alert-card">
+            <img src="img/alert-icon-3.svg" alt="Search" class="card-image" />
+
+            <div class="card-text-container">
+              <h2 class="card-title">Busque por qualquer ativo</h2>
               <p class="card-text">
                 Acesse informações sobre qualquer emissão do mercado em
                 segundos.
@@ -174,28 +260,6 @@
           alt="mobile_alerts"
           class="mobile-alerts-1280"
         />
-      </div>
-    </div>
-
-    <div class="text-content-cta-container">
-      <div class="text-content-cta">
-        <p class="text-content-cta-title">
-          Acompanhe seu portfólio de Renda Fixa em <br class="large-break" />
-          uma única plataforma.
-        </p>
-        <p class="text-content-cta-subtitle">
-          Monitore fluxos, eventos e posições da sua carteira com automação e
-          precisão em um único lugar.
-        </p>
-        <div class="text-content-cta-button">
-          <a href="form.html" class="outline-button button-cta"
-            >Entrar em contato
-            <img
-              class="cta-button-arrow"
-              src="img/arrow.png"
-              alt="Seta para a direita"
-          /></a>
-        </div>
       </div>
     </div>
 
@@ -312,5 +376,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="animation.js"></script>
   </body>
 </html>
