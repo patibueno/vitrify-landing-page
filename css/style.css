@@ -225,6 +225,10 @@
   background-color: #f1f1f1;
 }
 
+.text-container {
+  background-color: #f1f1f1;
+}
+
 .text-container-alert {
   padding: 40px 24px 0 24px;
   background-color: #f1f1f1;
@@ -294,6 +298,7 @@
   padding: 16px 24px;
   max-width: 544px;
   align-items: flex-start;
+  width: 100%;
 }
 
 .large-break {
@@ -639,11 +644,13 @@
 }
 
 .footer * {
-  background: #000000;
+  background-color: #000000;
+  color: white;
 }
 
 .footer-content {
   padding: 40px 24px;
+  background-color: #000000;
 }
 
 .footer-logo-1 {
@@ -667,7 +674,11 @@
   font-size: 14px;
   line-height: 160%;
   padding: 10px 24px;
+  color: white;
+  background-color: #000000;
+  border: 1px solid white;
 }
+
 .footer-col {
   display: flex;
   flex-direction: column;
@@ -680,6 +691,7 @@
   justify-content: center;
   gap: 32px;
 }
+
 .footer-first-column {
   display: flex;
   flex-direction: column;
@@ -701,7 +713,7 @@
   font-size: 14px;
   line-height: 160%;
   text-decoration: none;
-  color: #000000;
+  color: white;
   display: block;
 }
 
@@ -734,7 +746,7 @@
 }
 
 .legal-link {
-  color: #000000;
+  color: white;
   line-height: 160%;
   font-size: 14px;
 }
@@ -955,6 +967,7 @@
 
   .phone {
     text-align: left;
+    color: white;
   }
   .footer-logo-2 {
     display: none;
@@ -1055,6 +1068,7 @@
     gap: 60px;
     padding: 80px 80px 0 80px;
     justify-content: flex-end;
+    background-color: #f1f1f1;
   }
 
   .text-container {
@@ -1096,7 +1110,7 @@
   }
 
   .footer {
-    background: #f1f1f1;
+    background: #000000;
   }
 
   .footer-content {
@@ -1402,7 +1416,7 @@
   }
 
   .footer {
-    background: #000000;
+    background-color: #000000;
   }
 
   .footer-content {
